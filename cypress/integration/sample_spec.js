@@ -1,4 +1,4 @@
-describe("Check for index.html on localhost:5500", () => {
+describe("Check for index.html and correct company name on localhost:5500", () => {
   it("Visits localhost", () => {
     cy.visit("localhost:5500");
     cy.document().its("contentType").should("equal", "text/html");
@@ -6,7 +6,7 @@ describe("Check for index.html on localhost:5500", () => {
   });
 });
 
-describe("Check for index.html on GitHubPages deployed ESC site", () => {
+describe("Check for index.html and correct company name on GitHubPages deployed ESC site", () => {
   it("Visits ESC site", () => {
     cy.visit("https://christerresin.github.io/esc_v2/");
     cy.get(".logo").should("have.text", "Hacker Escape Rooms");
