@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "cypress:open": "cypress open"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cypress": "^9.4.1",
     "sass": "^1.43.4",
     "webpack-cli": "^4.9.1"
   },
